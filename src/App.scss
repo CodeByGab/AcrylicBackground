@@ -1,5 +1,6 @@
+@import './styles.scss';
 .container {
-    position: absolute;
-    top: 30px;
-    left: 20px;
+    margin-top: $titlebar-size;
+    display: flex;
+    flex-direction: row;
 }

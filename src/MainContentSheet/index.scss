@@ -1,0 +1,8 @@
+@import '../styles.scss';
+
+.container-sheet {
+    background-color: red;
+    margin-block: $margin-content;
+    margin-inline: $margin-content;
+    width: 100%;
+}

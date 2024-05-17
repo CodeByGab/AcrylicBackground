@@ -1,16 +1,49 @@
-aside {
-    background-color: #131313;
-    width: 5vw;
-    height: calc(100vh - 50px);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+@import "../styles.scss";
+$asidebar-margin: 10px;
+$asidebar-button-size: 40px;
 
-.tab {
-    color: white;
-    background-color: red;
-    width: 80%;
-    margin-top: 10px;
+aside {
+  background-color: #131313;
+  width: 5.7vw;
+  min-height: calc(100vh - $titlebar-size - ($margin-content * 2));
+  margin: $margin-content;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .tab {
+    border-radius: 10px;
+    width: 38px;
+    height: 38px;
+    margin-top: $asidebar-margin;
+    margin-inline: $asidebar-margin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    svg {
+      width: 20px;
+    }
+    &:hover {
+      background-color: rgb(79, 77, 83, 0.7);
+    }
+    &:active {
+      background-color: rgb(79, 77, 83, 0.5);
+      transform: scale(0.9);
+      transition: transform 0.1s;
+    }
+    &.tab-selected {
+      background-color: #4f4d53;
+      &:hover {
+        background-color: rgb(79, 77, 83, 0.7);
+      }
+      &:active {
+        background-color: rgb(79, 77, 83, 0.3);
+      }
+    }
+    &.conf {
+      margin-top: auto;
+      margin-bottom: $asidebar-margin;
+    }
+  }
 }
