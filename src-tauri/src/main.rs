@@ -11,7 +11,7 @@ fn main() {
             let window = app.get_window("main").unwrap();
 
             #[cfg(target_os = "windows")]
-            apply_acrylic(&window, Some((255, 255, 255, 10)))
+            apply_acrylic(&window, Some((0, 0, 0, 0)))
                 .expect("Unsupported platform! 'apply_acrylic' is only supported on Windows 11");
 
             Ok(())

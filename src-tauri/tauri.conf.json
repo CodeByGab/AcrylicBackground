@@ -11,6 +11,17 @@
   },
   "tauri": {
     "allowlist": {
+      "window": {
+        "all": true,
+        "close": true,
+        "hide": true,
+        "show": true,
+        "maximize": true,
+        "minimize": true,
+        "unmaximize": true,
+        "unminimize": true,
+        "startDragging": true
+      },
       "all": false,
       "shell": {
         "all": false,
@@ -20,8 +31,8 @@
     "windows": [
       {
         "title": "acryllicbackground2",
-        "width": 1100,
-        "height": 900,
+        "width": 918,
+        "height": 614,
         "decorations": false,
         "transparent": true
       }
