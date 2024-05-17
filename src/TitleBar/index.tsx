@@ -1,4 +1,4 @@
-import './index.css'
+import './index.scss'
 import { appWindow } from '@tauri-apps/api/window';
 
 function minimizeWindow(): void {

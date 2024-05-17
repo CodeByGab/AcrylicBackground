@@ -1,11 +1,15 @@
-import "./App.css";
+import "./App.scss";
 import TitleBar from "./TitleBar";
+import ASideBar from "./ASideBar";
 
 function App() {
 
   return (
     <>
-    <TitleBar></TitleBar>
+      <TitleBar></TitleBar>
+      <div className="container">
+        <ASideBar></ASideBar>
+      </div>
     </>
   );
 }
