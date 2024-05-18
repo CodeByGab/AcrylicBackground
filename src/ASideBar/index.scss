@@ -6,8 +6,9 @@ aside {
   background-color: #131313;
   width: 5.7vw;
   min-height: calc(100vh - $titlebar-size - ($margin-content * 2));
-  margin: $margin-content;
-  border-radius: 10px;
+  margin-block: $margin-content;
+  margin-left: $margin-content;
+  border-radius: $br-container;
   display: flex;
   flex-direction: column;
   align-items: center;

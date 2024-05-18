@@ -2,6 +2,7 @@
 $white: #DDDDDD;
 $titlebar-size: 30px;
 $margin-content: .8rem;
+$br-container: 10px;
 
 :root {
   font-family: "Roboto", Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -21,6 +22,7 @@ $margin-content: .8rem;
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html,

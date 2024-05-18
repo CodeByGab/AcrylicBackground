@@ -1,8 +1,57 @@
 @import '../styles.scss';
 
+@mixin cardPlaceholder() {
+    width: 200px;
+    height: 100px;
+    border: 1px solid $white;
+    border-radius: 5px;
+    background-color: #2C2C2C;
+    margin-top: $margin-content;
+}
+
 .container-sheet {
-    background-color: red;
+    background-color: #191919;
     margin-block: $margin-content;
     margin-inline: $margin-content;
     width: 100%;
+    border-radius: $br-container;
+    padding: 20px;
+    .container-status {
+        .container-name {
+            border-bottom: 1px solid $white;
+        }
+        .container-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .chac-pic {
+                margin-top: $margin-content;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 8rem;
+                width: 10rem;
+                img {
+                    border: 1px solid $white;
+                    border-radius: 50%;
+                    height: 8rem;
+                }
+            }
+            .name-hp {
+                @include cardPlaceholder();
+            }
+            .atributos {
+                @include cardPlaceholder();
+            }
+            .lvl-status {
+                @include cardPlaceholder();
+            }
+            .base-status {
+                @include cardPlaceholder();
+            }
+            .protect-status {
+                @include cardPlaceholder();
+            }
+        }
+    }
 }
